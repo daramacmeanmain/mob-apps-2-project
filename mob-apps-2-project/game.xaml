@@ -39,6 +39,7 @@
             <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" x:Uid="h" Content="" Tapped="h_Tapped"/>
             <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" Tapped="mgs_Tapped"/>
             <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed"/>
+            <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Score" Text="" />
         </Grid>
     </StackPanel>
 </Page>

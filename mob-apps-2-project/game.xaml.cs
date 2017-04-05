@@ -25,6 +25,7 @@ namespace mob_apps_2_project
     public sealed partial class game : Page
     {
         int playCount = 1;
+        int userScore = 0;
 
         public game()
         {
@@ -39,6 +40,8 @@ namespace mob_apps_2_project
             if (playCount == 2 || playCount == 3 || playCount == 8 || playCount == 9 || playCount == 13 || playCount == 15)
             {
                 Message.Text = "Correct";
+                userScore++;
+                Score.Text = userScore.ToString();
                 playCount++;
             }
 
@@ -47,7 +50,6 @@ namespace mob_apps_2_project
                 Message.Text = "Incorrect";
             }
 
-            //playCount++;
         }
 
         private void hl_Tapped(object sender, TappedRoutedEventArgs e)
@@ -57,6 +59,8 @@ namespace mob_apps_2_project
             if (playCount == 12 || playCount == 19 || playCount == 22)
             {
                 Message.Text = "Correct";
+                userScore++;
+                Score.Text = userScore.ToString();
                 playCount++;
             }
 
@@ -75,6 +79,8 @@ namespace mob_apps_2_project
             if (playCount == 6 || playCount == 10 || playCount == 20)
             {
                 Message.Text = "Correct";
+                userScore++;
+                Score.Text = userScore.ToString();
                 playCount++;
             }
 
@@ -93,6 +99,8 @@ namespace mob_apps_2_project
             if (playCount == 1 || playCount == 5 || playCount == 11 || playCount == 16 || playCount == 18)
             {
                 Message.Text = "Correct";
+                userScore++;
+                Score.Text = userScore.ToString();
                 playCount++;
             }
 
@@ -111,6 +119,8 @@ namespace mob_apps_2_project
             if (playCount == 4 || playCount == 7 || playCount == 14 || playCount == 17 || playCount == 21 || playCount == 23)
             {
                 Message.Text = "Correct";
+                userScore++;
+                Score.Text = userScore.ToString();
                 playCount++;
             }
 
