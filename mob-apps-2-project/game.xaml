@@ -32,14 +32,17 @@
         <MediaElement x:Name="sw_wilhelm" AutoPlay="False" Source="Assets/Audio/23-sw_wilhelm.mp3" />
         
         <Grid Height="680" Width="1230" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            <Button Width="300" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Tapped="play_Tapped">Play That Sound</Button>
-            <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Center" x:Uid="st" Content="" Tapped="st_Tapped"/>
-            <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Center" x:Uid="sw" Content="" Tapped="sw_Tapped"/>
-            <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" x:Uid="hl" Content="" Tapped="hl_Tapped"/>
-            <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" x:Uid="h" Content="" Tapped="h_Tapped"/>
-            <Button Width="150" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" Tapped="mgs_Tapped"/>
-            <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed"/>
+            <Button x:Name="Audio" Width="300" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Tapped="play_Tapped">Play That Sound</Button>
+            <Button x:Name="startrek" Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Center" x:Uid="st" Content="" Tapped="st_Tapped"/>
+            <Button x:Name="starwars" Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Center" x:Uid="sw" Content="" Tapped="sw_Tapped"/>
+            <Button x:Name="halflife" Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" x:Uid="hl" Content="" Tapped="hl_Tapped"/>
+            <Button x:Name="halo" Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" x:Uid="h" Content="" Tapped="h_Tapped"/>
+            <Button x:Name="metalgear" Width="150" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" Tapped="mgs_Tapped"/>
+            <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="gameover" Visibility="Collapsed" Tapped="gameover_Tapped" Content="Game Over - Return to Main Menu" />
+            <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed"/>
             <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Score" Text="" />
+            <TextBlock x:Name="oldScore" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Text="" />
+            <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="Test" Text="" />
         </Grid>
     </StackPanel>
 </Page>

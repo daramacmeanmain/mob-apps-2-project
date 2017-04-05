@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,10 +29,20 @@ namespace mob_apps_2_project
         int playCount = 1;
         int userScore = 0;
 
+
         public game()
         {
             this.InitializeComponent();
+            readFile();
+        }
 
+        private async void readFile()
+        {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            String text = await FileIO.ReadTextAsync(scoreFile);
+            oldScore.Text = text;
         }
 
         private void h_Tapped(object sender, TappedRoutedEventArgs e)
@@ -48,6 +60,12 @@ namespace mob_apps_2_project
             else
             {
                 Message.Text = "Incorrect";
+                gameover.Visibility = Visibility.Visible;
+                halo.Visibility = Visibility.Collapsed;
+                halflife.Visibility = Visibility.Collapsed;
+                metalgear.Visibility = Visibility.Collapsed;
+                startrek.Visibility = Visibility.Collapsed;
+                starwars.Visibility = Visibility.Collapsed;
             }
 
         }
@@ -67,6 +85,12 @@ namespace mob_apps_2_project
             else
             {
                 Message.Text = "Incorrect";
+                gameover.Visibility = Visibility.Visible;
+                halo.Visibility = Visibility.Collapsed;
+                halflife.Visibility = Visibility.Collapsed;
+                metalgear.Visibility = Visibility.Collapsed;
+                startrek.Visibility = Visibility.Collapsed;
+                starwars.Visibility = Visibility.Collapsed;
             }
 
             
@@ -87,6 +111,12 @@ namespace mob_apps_2_project
             else
             {
                 Message.Text = "Incorrect";
+                gameover.Visibility = Visibility.Visible;
+                halo.Visibility = Visibility.Collapsed;
+                halflife.Visibility = Visibility.Collapsed;
+                metalgear.Visibility = Visibility.Collapsed;
+                startrek.Visibility = Visibility.Collapsed;
+                starwars.Visibility = Visibility.Collapsed;
             }
 
             
@@ -107,6 +137,12 @@ namespace mob_apps_2_project
             else
             {
                 Message.Text = "Incorrect";
+                gameover.Visibility = Visibility.Visible;
+                halo.Visibility = Visibility.Collapsed;
+                halflife.Visibility = Visibility.Collapsed;
+                metalgear.Visibility = Visibility.Collapsed;
+                startrek.Visibility = Visibility.Collapsed;
+                starwars.Visibility = Visibility.Collapsed;
             }
 
             
@@ -127,6 +163,12 @@ namespace mob_apps_2_project
             else
             {
                 Message.Text = "Incorrect";
+                gameover.Visibility = Visibility.Visible;
+                halo.Visibility = Visibility.Collapsed;
+                halflife.Visibility = Visibility.Collapsed;
+                metalgear.Visibility = Visibility.Collapsed;
+                startrek.Visibility = Visibility.Collapsed;
+                starwars.Visibility = Visibility.Collapsed;
             }
 
             
@@ -208,6 +250,16 @@ namespace mob_apps_2_project
                     sw_alarm.Play();
                     break;
             }
+        }
+
+        private async void gameover_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.CreateFileAsync("score.txt", CreationCollisionOption.OpenIfExists);
+
+            await FileIO.AppendTextAsync(scoreFile, userScore.ToString() + Environment.NewLine);
+
+            Frame.Navigate(typeof(MainPage), UriKind.Relative);
         }
     }
 }
