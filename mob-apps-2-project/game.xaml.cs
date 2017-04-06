@@ -33,7 +33,14 @@ namespace mob_apps_2_project
         public game()
         {
             this.InitializeComponent();
+            makeFile();
             readFile();
+        }
+
+        private async void makeFile()
+        {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile playlists = await storageFolder.CreateFileAsync("score.txt", CreationCollisionOption.OpenIfExists);
         }
 
         private async void readFile()

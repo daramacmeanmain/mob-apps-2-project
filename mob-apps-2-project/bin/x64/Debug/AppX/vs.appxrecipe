@@ -10,25 +10,25 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>7d903fec-2196-479a-820a-f05342b52abe</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B8725717F3C3B280A87AE976E04CE2875960BA70940D3591ECE2BF86987E08CB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>7d903fec-2196-479a-820a-f05342b52abe_1.0.0.0_x64__ec2rmsteefqt4</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>7d903fec-2196-479a-820a-f05342b52abe_ec2rmsteefqt4!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>7d903fec-2196-479a-820a-f05342b52abe</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Dara</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>EA234D5957C3686CB37B6E47C457B25F57CE9851AFC9DE021EFCE1D942D23E70</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>5968DaraMacMeanmain.WhatsThatSound-Sci-FiSoundEffe_1.1.0.0_x64__zv91ywhpfj4bp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>5968DaraMacMeanmain.WhatsThatSound-Sci-FiSoundEffe_zv91ywhpfj4bp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>5968DaraMacMeanmain.WhatsThatSound-Sci-FiSoundEffe</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=97468A7F-B9E3-4CEE-BBCE-AAA19C6E02D7</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T10:49:20.487</Modified>
+      <Modified>2017-04-06T16:31:39.549</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\bin\x64\Debug\mob-apps-2-project.exe">
       <PackagePath>entrypoint\mob-apps-2-project.exe</PackagePath>
-      <Modified>2017-04-06T10:49:19.682</Modified>
+      <Modified>2017-04-06T16:31:30.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -560,37 +560,37 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:26:28.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:28:16.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:34:09.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:30:06.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:31:46.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:35:53.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T21:09:42.000</Modified>
+      <Modified>2017-04-06T11:38:14.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -606,11 +606,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-04-06T10:49:20.265</Modified>
+      <Modified>2017-04-06T16:31:37.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\bin\x64\Debug\Core\mob-apps-2-project.exe">
       <PackagePath>mob-apps-2-project.exe</PackagePath>
-      <Modified>2017-04-06T10:49:20.485</Modified>
+      <Modified>2017-04-06T16:31:39.541</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

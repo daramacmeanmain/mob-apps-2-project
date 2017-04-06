@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ApplicationInsights.config" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/ApplicationInsights.config">
+				<Candidate type="Path">
+					<Value>ApplicationInsights.config</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="game.xbf" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/game.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="mob-apps-2-project.xr.xml" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/mob-apps-2-project.xr.xml">
+				<Candidate type="Path">
+					<Value>mob-apps-2-project.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="game_bg.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/game_bg.png">
+					<Candidate type="Path">
+						<Value>Assets\game_bg.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="start_bg.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/start_bg.png">
+					<Candidate type="Path">
+						<Value>Assets\start_bg.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Audio">
+					<NamedResource name="01-h_banshee.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/01-h_banshee.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\01-h_banshee.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="02-h_camo.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/02-h_camo.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\02-h_camo.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="03-h_elite.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/03-h_elite.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\03-h_elite.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="04-h_overshield.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/04-h_overshield.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\04-h_overshield.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="05-h_rifle.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/05-h_rifle.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\05-h_rifle.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="06-h_warthog.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/06-h_warthog.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\06-h_warthog.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="07-hl_crowbar.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/07-hl_crowbar.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\07-hl_crowbar.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="08-hl_energy.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/08-hl_energy.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\08-hl_energy.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="09hl_phys.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/09hl_phys.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\09hl_phys.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="10-mgs_codeccall.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/10-mgs_codeccall.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\10-mgs_codeccall.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="11-mgs_found.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/11-mgs_found.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\11-mgs_found.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="12-mgs_gameover.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/12-mgs_gameover.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\12-mgs_gameover.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="13-st_alien_mat.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/13-st_alien_mat.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\13-st_alien_mat.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="14-st_bridge.wav" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/14-st_bridge.wav">
+						<Candidate type="Path">
+							<Value>Assets\Audio\14-st_bridge.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="15-st_chirp.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/15-st_chirp.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\15-st_chirp.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="16-st_transbeep.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/16-st_transbeep.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\16-st_transbeep.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="17-st_transporter.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/17-st_transporter.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\17-st_transporter.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="18-sw_alarm.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/18-sw_alarm.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\18-sw_alarm.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="19-sw_blaster.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/19-sw_blaster.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\19-sw_blaster.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="20-sw_chewy.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/20-sw_chewy.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\20-sw_chewy.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="21-sw_lightsaber.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/21-sw_lightsaber.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\21-sw_lightsaber.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="22-sw_r2d2.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/22-sw_r2d2.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\22-sw_r2d2.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="23-sw_wilhelm.mp3" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Assets/Audio/23-sw_wilhelm.mp3">
+						<Candidate type="Path">
+							<Value>Assets\Audio\23-sw_wilhelm.mp3</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<ResourceMapSubtree name="h">
+				<NamedResource name="Content" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Resources/h/Content">
+					<Candidate type="String">
+						<Value>Halo</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="hl">
+				<NamedResource name="Content" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Resources/hl/Content">
+					<Candidate type="String">
+						<Value>Half-Life</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="mgs">
+				<NamedResource name="Content" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Resources/mgs/Content">
+					<Candidate type="String">
+						<Value>Metal Gear Solid</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="st">
+				<NamedResource name="Content" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Resources/st/Content">
+					<Candidate type="String">
+						<Value>Star Trek</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="sw">
+				<NamedResource name="Content" uri="ms-resource://5968DaraMacMeanmain.WhatsThatSoundSci-FiSoundEffec/Resources/sw/Content">
+					<Candidate type="String">
+						<Value>Star Wars</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

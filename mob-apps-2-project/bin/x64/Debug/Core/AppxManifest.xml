@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="7d903fec-2196-479a-820a-f05342b52abe" Publisher="CN=Dara" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="5968DaraMacMeanmain.WhatsThatSound-Sci-FiSoundEffe" Publisher="CN=97468A7F-B9E3-4CEE-BBCE-AAA19C6E02D7" Version="1.1.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="7d903fec-2196-479a-820a-f05342b52abe" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>mob-apps-2-project</DisplayName>
-    <PublisherDisplayName>Dara</PublisherDisplayName>
+    <DisplayName>What's That Sound? - Sci-Fi Sound Effects Quiz</DisplayName>
+    <PublisherDisplayName>Dara MacMeanmain</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -24,9 +24,12 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="mob-apps-2-project.exe" EntryPoint="mob_apps_2_project.App">
-      <uap:VisualElements DisplayName="mob-apps-2-project" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="mob-apps-2-project" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="What's That Sound? - Sci-Fi Sound Effects Quiz" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="mob-apps-2-project" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
