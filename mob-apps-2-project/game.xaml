@@ -43,7 +43,9 @@
             <Button x:Name="metalgear" Width="150" Height="80" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="mgs_Tapped"/>
             <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="gameover" Visibility="Collapsed" Tapped="gameover_Tapped" Content="Game Over - Return to Main Menu" Background="DimGray" RequestedTheme="Dark" />
             <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="win" Visibility="Collapsed" Tapped="gameover_Tapped" Content="You Win! - Return to Main Menu" Background="DimGray" RequestedTheme="Dark" />
-            <TextBox FontSize="36" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed" RequestedTheme="Dark" IsReadOnly="True" Foreground="White" />
+            <Grid Background="Black" Opacity="0.25" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" Width="175" Height="50"></Grid>
+            <Grid Background="Black" Opacity="0.25" Margin="25" Width="300" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"></Grid>
+            <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Visible" RequestedTheme="Dark" Foreground="White" Width="150" />
             <TextBlock FontSize="36" Margin="25" Width="300" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Score" Text="" RequestedTheme="Dark" />
             <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="Test" Text="" RequestedTheme="Dark"/>
         </Grid>

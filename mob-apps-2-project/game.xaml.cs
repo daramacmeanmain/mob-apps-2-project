@@ -40,9 +40,8 @@ namespace mob_apps_2_project
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
             StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
-            String highScores = await FileIO.ReadTextAsync(scoreFile);
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
             
-            //int score = 0;
             int high = 0;
             
             foreach (var line in highScores)
@@ -56,8 +55,22 @@ namespace mob_apps_2_project
             Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
         }
 
-        private void h_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void h_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
+
+            int high = 0;
+
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line);
+
+                if (scoreInt > high)
+                    high = scoreInt;
+            }
+
             Message.Visibility = Visibility.Visible;
 
             if (playCount == 2 || playCount == 3 || playCount == 8 || playCount == 9 || playCount == 13 || playCount == 15)
@@ -65,7 +78,7 @@ namespace mob_apps_2_project
                 Message.Text = "Correct";
                 Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = "Current Score: " + userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
                 Audio.Content = "Play Next Sound"; 
                 playCount++;
             }
@@ -74,6 +87,7 @@ namespace mob_apps_2_project
             {
                 Message.Text = "Incorrect";
                 Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                Audio.Visibility = Visibility.Collapsed;
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -84,8 +98,21 @@ namespace mob_apps_2_project
 
         }
 
-        private void hl_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void hl_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
+
+            int high = 0;
+
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line);
+
+                if (scoreInt > high)
+                    high = scoreInt;
+            }
             Message.Visibility = Visibility.Visible;
 
             if (playCount == 12 || playCount == 19 || playCount == 22)
@@ -93,7 +120,8 @@ namespace mob_apps_2_project
                 Message.Text = "Correct";
                 Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = "Current Score: " + userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
+                Audio.Content = "Play Next Sound";
                 playCount++;
             }
 
@@ -101,6 +129,7 @@ namespace mob_apps_2_project
             {
                 Message.Text = "Incorrect";
                 Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                Audio.Visibility = Visibility.Collapsed;
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -112,8 +141,22 @@ namespace mob_apps_2_project
             
         }
 
-        private void mgs_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void mgs_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
+
+            int high = 0;
+
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line);
+
+                if (scoreInt > high)
+                    high = scoreInt;
+            }
+
             Message.Visibility = Visibility.Visible;
 
             if (playCount == 6 || playCount == 10 || playCount == 20)
@@ -121,7 +164,8 @@ namespace mob_apps_2_project
                 Message.Text = "Correct";
                 Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = "Current Score: " + userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
+                Audio.Content = "Play Next Sound";
                 playCount++;
             }
 
@@ -129,6 +173,7 @@ namespace mob_apps_2_project
             {
                 Message.Text = "Incorrect";
                 Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                Audio.Visibility = Visibility.Collapsed;
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -140,8 +185,22 @@ namespace mob_apps_2_project
             
         }
 
-        private void st_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void st_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
+
+            int high = 0;
+
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line);
+
+                if (scoreInt > high)
+                    high = scoreInt;
+            }
+
             Message.Visibility = Visibility.Visible;
 
             if (playCount == 1 || playCount == 5 || playCount == 11 || playCount == 16 || playCount == 18)
@@ -149,7 +208,8 @@ namespace mob_apps_2_project
                 Message.Text = "Correct";
                 Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = "Current Score: " + userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
+                Audio.Content = "Play Next Sound";
                 playCount++;
             }
 
@@ -157,6 +217,7 @@ namespace mob_apps_2_project
             {
                 Message.Text = "Incorrect";
                 Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                Audio.Visibility = Visibility.Collapsed;
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -168,8 +229,22 @@ namespace mob_apps_2_project
             
         }
 
-        private void sw_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void sw_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+            StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
+            var highScores = await FileIO.ReadLinesAsync(scoreFile);
+
+            int high = 0;
+
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line);
+
+                if (scoreInt > high)
+                    high = scoreInt;
+            }
+
             Message.Visibility = Visibility.Visible;
 
             if (playCount == 4 || playCount == 7 || playCount == 14 || playCount == 17 || playCount == 21 || playCount == 23)
@@ -177,7 +252,8 @@ namespace mob_apps_2_project
                 Message.Text = "Correct";
                 Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = "Current Score: " + userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
+                Audio.Content = "Play Next Sound";
                 playCount++;
             }
 
@@ -185,6 +261,7 @@ namespace mob_apps_2_project
             {
                 Message.Text = "Incorrect";
                 Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                Audio.Visibility = Visibility.Collapsed;
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -206,6 +283,7 @@ namespace mob_apps_2_project
                     st_transporter.Play();
                     break;
                 case 2:
+                    Audio.Content = "Play Sound";
                     h_elite.Play();
                     break;
                 case 3:
@@ -213,66 +291,87 @@ namespace mob_apps_2_project
                     h_over.Play();
                     break;
                 case 4:
+                    Audio.Content = "Play Sound";
                     sw_chewy.Play();
                     break;
                 case 5:
+                    Audio.Content = "Play Sound";
                     st_chirp.Play();
                     break;
                 case 6:
+                    Audio.Content = "Play Sound";
                     mgs_go.Play();
                     break;
                 case 7:
+                    Audio.Content = "Play Sound";
                     sw_blaster.Play();
                     break;
                 case 8:
+                    Audio.Content = "Play Sound";
                     h_rifle.Play();
                     break;
                 case 9:
+                    Audio.Content = "Play Sound";
                     h_ban.Play();
                     break;
                 case 10:
+                    Audio.Content = "Play Sound";
                     mgs_found.Play();
                     break;
                 case 11:
+                    Audio.Content = "Play Sound";
                     st_bridge.Play();
                     break;
                 case 12:
+                    Audio.Content = "Play Sound";
                     hl_energy.Play();
                     break;
                 case 13:
+                    Audio.Content = "Play Sound";
                     h_camo.Play();
                     break;
                 case 14:
+                    Audio.Content = "Play Sound";
                     sw_r2d2.Play();
                     break;
                 case 15:
+                    Audio.Content = "Play Sound";
                     h_warthog.Play();
                     break;
                 case 16:
+                    Audio.Content = "Play Sound";
                     st_transbeep.Play();
                     break;
                 case 17:
+                    Audio.Content = "Play Sound";
                     sw_wilhelm.Play();
                     break;
                 case 18:
+                    Audio.Content = "Play Sound";
                     st_alien.Play();
                     break;
                 case 19:
+                    Audio.Content = "Play Sound";
                     hl_cb.Play();
                     break;
                 case 20:
+                    Audio.Content = "Play Sound";
                     mgs_call.Play();
                     break;
                 case 21:
+                    Audio.Content = "Play Sound";
                     sw_lightsaber.Play();
                     break;
                 case 22:
+                    Audio.Content = "Play Sound";
                     hl_phys.Play();
                     break;
                 case 23:
+                    Audio.Content = "Play Sound";
                     sw_alarm.Play();
                     break;
                 case 24:
+                    Audio.Visibility = Visibility.Collapsed;
                     halo.Visibility = Visibility.Collapsed;
                     halflife.Visibility = Visibility.Collapsed;
                     metalgear.Visibility = Visibility.Collapsed;
