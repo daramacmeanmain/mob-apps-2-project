@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Storage;
+using Windows.UI;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,7 +30,6 @@ namespace mob_apps_2_project
         int playCount = 1;
         int userScore = 0;
 
-
         public game()
         {
             this.InitializeComponent();
@@ -39,10 +39,21 @@ namespace mob_apps_2_project
         private async void readFile()
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-
             StorageFile scoreFile = await storageFolder.GetFileAsync("score.txt");
-            String text = await FileIO.ReadTextAsync(scoreFile);
-            oldScore.Text = text;
+            String highScores = await FileIO.ReadTextAsync(scoreFile);
+            
+            //int score = 0;
+            int high = 0;
+            
+            foreach (var line in highScores)
+            {
+                int scoreInt = Convert.ToInt32(line); 
+
+                    if (scoreInt > high)
+                        high = scoreInt;
+            }
+
+            Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
         }
 
         private void h_Tapped(object sender, TappedRoutedEventArgs e)
@@ -52,14 +63,17 @@ namespace mob_apps_2_project
             if (playCount == 2 || playCount == 3 || playCount == 8 || playCount == 9 || playCount == 13 || playCount == 15)
             {
                 Message.Text = "Correct";
+                Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString();
+                Audio.Content = "Play Next Sound"; 
                 playCount++;
             }
 
             else
             {
                 Message.Text = "Incorrect";
+                Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -77,14 +91,16 @@ namespace mob_apps_2_project
             if (playCount == 12 || playCount == 19 || playCount == 22)
             {
                 Message.Text = "Correct";
+                Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString();
                 playCount++;
             }
 
             else
             {
                 Message.Text = "Incorrect";
+                Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -103,14 +119,16 @@ namespace mob_apps_2_project
             if (playCount == 6 || playCount == 10 || playCount == 20)
             {
                 Message.Text = "Correct";
+                Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString();
                 playCount++;
             }
 
             else
             {
                 Message.Text = "Incorrect";
+                Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -129,14 +147,16 @@ namespace mob_apps_2_project
             if (playCount == 1 || playCount == 5 || playCount == 11 || playCount == 16 || playCount == 18)
             {
                 Message.Text = "Correct";
+                Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString();
                 playCount++;
             }
 
             else
             {
                 Message.Text = "Incorrect";
+                Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -155,14 +175,16 @@ namespace mob_apps_2_project
             if (playCount == 4 || playCount == 7 || playCount == 14 || playCount == 17 || playCount == 21 || playCount == 23)
             {
                 Message.Text = "Correct";
+                Message.Foreground = new SolidColorBrush(Colors.LightGreen);
                 userScore++;
-                Score.Text = userScore.ToString();
+                Score.Text = "Current Score: " + userScore.ToString();
                 playCount++;
             }
 
             else
             {
                 Message.Text = "Incorrect";
+                Message.Foreground = new SolidColorBrush(Colors.OrangeRed);
                 gameover.Visibility = Visibility.Visible;
                 halo.Visibility = Visibility.Collapsed;
                 halflife.Visibility = Visibility.Collapsed;
@@ -187,6 +209,7 @@ namespace mob_apps_2_project
                     h_elite.Play();
                     break;
                 case 3:
+                    Audio.Content = "Play Sound";
                     h_over.Play();
                     break;
                 case 4:
@@ -248,6 +271,14 @@ namespace mob_apps_2_project
                     break;
                 case 23:
                     sw_alarm.Play();
+                    break;
+                case 24:
+                    halo.Visibility = Visibility.Collapsed;
+                    halflife.Visibility = Visibility.Collapsed;
+                    metalgear.Visibility = Visibility.Collapsed;
+                    startrek.Visibility = Visibility.Collapsed;
+                    starwars.Visibility = Visibility.Collapsed;
+                    win.Visibility = Visibility.Visible;
                     break;
             }
         }

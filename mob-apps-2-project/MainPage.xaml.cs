@@ -27,7 +27,7 @@ namespace mob_apps_2_project
             this.InitializeComponent();
         }
 
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        private void Start_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(game));
         }

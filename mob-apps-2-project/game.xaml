@@ -30,19 +30,22 @@
         <MediaElement x:Name="sw_lightsaber" AutoPlay="False" Source="Assets/Audio/21-sw_lightsaber.mp3" />
         <MediaElement x:Name="sw_r2d2" AutoPlay="False" Source="Assets/Audio/22-sw_r2d2.mp3" />
         <MediaElement x:Name="sw_wilhelm" AutoPlay="False" Source="Assets/Audio/23-sw_wilhelm.mp3" />
-        
+
         <Grid Height="680" Width="1230" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            <Button x:Name="Audio" Width="300" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Tapped="play_Tapped">Play That Sound</Button>
-            <Button x:Name="startrek" Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Center" x:Uid="st" Content="" Tapped="st_Tapped"/>
-            <Button x:Name="starwars" Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Center" x:Uid="sw" Content="" Tapped="sw_Tapped"/>
-            <Button x:Name="halflife" Width="150" Height="150" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" x:Uid="hl" Content="" Tapped="hl_Tapped"/>
-            <Button x:Name="halo" Width="150" Height="150" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Bottom" x:Uid="h" Content="" Tapped="h_Tapped"/>
-            <Button x:Name="metalgear" Width="150" Height="150" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" Tapped="mgs_Tapped"/>
-            <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="gameover" Visibility="Collapsed" Tapped="gameover_Tapped" Content="Game Over - Return to Main Menu" />
-            <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed"/>
-            <TextBlock FontSize="36" Margin="25" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Score" Text="" />
-            <TextBlock x:Name="oldScore" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Text="" />
-            <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="Test" Text="" />
+            <Grid.Background>
+                <ImageBrush ImageSource ="/Assets/game_bg.png"></ImageBrush>
+            </Grid.Background>
+            <Button x:Name="Audio" Width="300" Height="80" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" RequestedTheme="Dark" Tapped="play_Tapped" Background="DimGray" Content="Play Sound"/>
+            <Button x:Name="halflife" Width="150" Height="80" Margin="100" HorizontalAlignment="Left" VerticalAlignment="Center" x:Uid="hl" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="hl_Tapped"/>
+            <Button x:Name="halo" Width="150" Height="80" Margin="100" HorizontalAlignment="Right" VerticalAlignment="Center" x:Uid="h" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="h_Tapped"/>
+            <Button x:Name="startrek" Width="150" Margin="100,575,0,25" HorizontalAlignment="Left" VerticalAlignment="Stretch" x:Uid="st" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="st_Tapped"/>
+            <Button x:Name="starwars" Width="150" Margin="0,575,100,25" HorizontalAlignment="Right" VerticalAlignment="Stretch" x:Uid="sw" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="sw_Tapped"/>
+            <Button x:Name="metalgear" Width="150" Height="80" Margin="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Uid="mgs" Content="" RequestedTheme="Dark" Background="DimGray" Tapped="mgs_Tapped"/>
+            <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="gameover" Visibility="Collapsed" Tapped="gameover_Tapped" Content="Game Over - Return to Main Menu" Background="DimGray" RequestedTheme="Dark" />
+            <Button Width="300" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="win" Visibility="Collapsed" Tapped="gameover_Tapped" Content="You Win! - Return to Main Menu" Background="DimGray" RequestedTheme="Dark" />
+            <TextBox FontSize="36" Margin="25" HorizontalAlignment="Right" VerticalAlignment="Top" x:Name="Message" x:Uid="msgCorrect" Text="" Visibility="Collapsed" RequestedTheme="Dark" IsReadOnly="True" Foreground="White" />
+            <TextBlock FontSize="36" Margin="25" Width="300" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="Score" Text="" RequestedTheme="Dark" />
+            <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="Test" Text="" RequestedTheme="Dark"/>
         </Grid>
     </StackPanel>
 </Page>

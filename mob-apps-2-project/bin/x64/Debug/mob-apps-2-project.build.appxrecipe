@@ -411,8 +411,11 @@
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Audio\14-st_bridge.wav">
       <PackagePath>Assets\Audio\14-st_bridge.wav</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\game_bg.png">
+      <PackagePath>Assets\game_bg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\start_bg.png">
+      <PackagePath>Assets\start_bg.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -440,6 +443,9 @@
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dara\Documents\Visual Studio 2015\Projects\mob-apps-2-project\mob-apps-2-project\mob-apps-2-project\bin\x64\Debug\mob-apps-2-project.xr.xml">
       <PackagePath>mob-apps-2-project.xr.xml</PackagePath>
