@@ -40,6 +40,7 @@ namespace mob_apps_2_project
         }
 
         //Create score file
+        //Adapted from https://docs.microsoft.com/en-us/windows/uwp/files/quickstart-reading-and-writing-files
         private async void makeFile()
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -47,6 +48,7 @@ namespace mob_apps_2_project
         }
 
         //Reading from the score file and displaying high score
+        //Adapted from http://stackoverflow.com/questions/20550132/getting-highest-number-on-a-textfile
         private async void readFile()
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
