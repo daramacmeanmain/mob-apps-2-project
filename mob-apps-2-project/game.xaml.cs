@@ -23,13 +23,15 @@ using Windows.UI;
 namespace mob_apps_2_project
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Page that handles the games functionality
     /// </summary>
     public sealed partial class game : Page
     {
+        //Initialise count and score
         int playCount = 1;
         int userScore = 0;
 
+        //Initialize game
         public game()
         {
             this.InitializeComponent();
@@ -37,12 +39,14 @@ namespace mob_apps_2_project
             readFile();
         }
 
+        //Create score file
         private async void makeFile()
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
             StorageFile playlists = await storageFolder.CreateFileAsync("score.txt", CreationCollisionOption.OpenIfExists);
         }
 
+        //Reading from the score file and displaying high score
         private async void readFile()
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -51,7 +55,7 @@ namespace mob_apps_2_project
             
             int high = 0;
             
-            foreach (var line in highScores)
+            foreach (var line in highScores)//Retrieving the high score
             {
                 int scoreInt = Convert.ToInt32(line); 
 
@@ -62,6 +66,7 @@ namespace mob_apps_2_project
             Score.Text = "Current Score: " + userScore.ToString() + Environment.NewLine + "High Score: " + high;
         }
 
+        //Halo button
         private async void h_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -80,6 +85,7 @@ namespace mob_apps_2_project
 
             Message.Visibility = Visibility.Visible;
 
+            //updates the count to continue the game
             if (playCount == 2 || playCount == 3 || playCount == 8 || playCount == 9 || playCount == 13 || playCount == 15)
             {
                 Message.Text = "Correct";
@@ -90,6 +96,7 @@ namespace mob_apps_2_project
                 playCount++;
             }
 
+            //displays the game over button and ends the game
             else
             {
                 Message.Text = "Incorrect";
@@ -105,6 +112,7 @@ namespace mob_apps_2_project
 
         }
 
+        //Half-Life button
         private async void hl_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -148,6 +156,7 @@ namespace mob_apps_2_project
             
         }
 
+        //Metal Gear Solid button
         private async void mgs_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -192,6 +201,7 @@ namespace mob_apps_2_project
             
         }
 
+        //Star Trek button
         private async void st_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -236,6 +246,7 @@ namespace mob_apps_2_project
             
         }
 
+        //Star Wars Button
         private async void sw_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
@@ -280,10 +291,12 @@ namespace mob_apps_2_project
             
         }
 
+        //Managing the game running
         private void play_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Message.Visibility = Visibility.Collapsed;
 
+            //Choosing which sound plays next
             switch (playCount)
             {
                 case 1:
@@ -377,7 +390,7 @@ namespace mob_apps_2_project
                     Audio.Content = "Play Sound";
                     sw_alarm.Play();
                     break;
-                case 24:
+                case 24://Game ends
                     Audio.Visibility = Visibility.Collapsed;
                     halo.Visibility = Visibility.Collapsed;
                     halflife.Visibility = Visibility.Collapsed;
@@ -389,13 +402,16 @@ namespace mob_apps_2_project
             }
         }
 
+        //Game over button
         private async void gameover_Tapped(object sender, TappedRoutedEventArgs e)
         {
             StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
             StorageFile scoreFile = await storageFolder.CreateFileAsync("score.txt", CreationCollisionOption.OpenIfExists);
 
+            //final score is saved to the text file
             await FileIO.AppendTextAsync(scoreFile, userScore.ToString() + Environment.NewLine);
 
+            //returns to main menu
             Frame.Navigate(typeof(MainPage), UriKind.Relative);
         }
     }

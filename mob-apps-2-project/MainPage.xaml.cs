@@ -18,15 +18,17 @@ using Windows.UI.Xaml.Navigation;
 namespace mob_apps_2_project
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Main menu page to for starting the game
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        //Initialise page
         public MainPage()
         {
             this.InitializeComponent();
         }
 
+        //Takes player to the game page
         private void Start_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(game));
